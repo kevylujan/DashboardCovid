@@ -5,9 +5,7 @@ aiosignal==1.2.0
 alabaster==0.7.12
 altair==4.2.0
 appdirs==1.4.4
-conda
 folium==0.18.0
-jsonpointer==2.1
 Markdown
 matplotlib
 matplotlib-inline
