@@ -16,7 +16,7 @@ def generar_mapa_calor(df3, centro_df):
 mapa = folium.Map(location=[centro_df['latitud'].values[0], centro_df['longitud'].values[0]], zoom_start=15)
 heat_data = [[row['latitud'], row['longitud']] for index, row in df3.iterrows()]
 HeatMap(heat_data).add_to(mapa)
-st_folium(mapa, width=700, height=400)  # Ajuste de tamaño para reducir el espacio
+st_folium(mapa, width=250, height=150)  # Ajuste de tamaño para reducir el espacio
 
 # Agregar espacio pequeño entre el mapa y la tabla
 st.markdown("<br>", unsafe_allow_html=True)
