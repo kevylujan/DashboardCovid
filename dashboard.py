@@ -12,6 +12,7 @@ from secciones.tabla_estadisticas import generar_tabla_estadisticas
 
 # Carga de datos
 @st.cache_data(show_spinner=False)
+
 def cargar_datos():
     df = pd.read_csv("TB_CENTRO_VACUNACION.csv", sep=";")
     df1 = df.copy()
@@ -67,6 +68,5 @@ if centro_seleccionado != "Seleccione una opción" and not centro_df.empty:
     generar_grafico_barras(df3, region_seleccionada, provincia_seleccionada, distrito_seleccionado)
     generar_mapa_calor(df3, centro_df)
     generar_tabla_estadisticas(df3, region_seleccionada, provincia_seleccionada, distrito_seleccionado)
-   
 else:
     st.warning("Selecciona un centro de vacunación para ver la información.")
