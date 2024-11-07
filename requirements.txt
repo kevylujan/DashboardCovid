@@ -4,4 +4,3 @@ plotly
 plotly-express==0.4.1
 streamlit
 streamlit_folium
-secciones
