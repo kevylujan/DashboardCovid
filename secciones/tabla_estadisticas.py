@@ -20,4 +20,4 @@ def generar_tabla_estadisticas(df3, region_seleccionada, provincia_seleccionada,
         "Total de Centros en Distrito": df3[(df3['region'] == region_seleccionada) & (df3['provincia'] == provincia_seleccionada) & (df3['distrito'] == distrito_seleccionado)].shape[0]
     }
     for key, value in estadisticas.items():
-        st.metric(label=key, value=value)
+        st.metric(label=key, value=value

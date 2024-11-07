@@ -12,7 +12,6 @@ from secciones.tabla_estadisticas import generar_tabla_estadisticas
 
 # Carga de datos
 @st.cache_data(show_spinner=False)
-
 def cargar_datos():
     df = pd.read_csv("TB_CENTRO_VACUNACION.csv", sep=";")
     df1 = df.copy()

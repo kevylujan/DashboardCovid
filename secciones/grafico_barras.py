@@ -1,10 +1,4 @@
 # secciones/grafico_barras.py
-import streamlit as st
-import pandas as pd
-import folium
-import numpy as np
-import plotly.express as px
-from folium.plugins import HeatMap
 import plotly.express as px
 import streamlit as st
 
@@ -26,4 +20,3 @@ def generar_grafico_barras(df3, region_seleccionada, provincia_seleccionada, dis
         # Crear gráfico de barras con Plotly
         fig = px.bar(datos_agrupados, x=datos_agrupados.columns[0], y='centros', title=titulo)
         st.plotly_chart(fig)
-
