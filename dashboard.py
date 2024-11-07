@@ -65,10 +65,8 @@ centro_df = df3[df3['Centro_vacunacion'] == centro_seleccionado]
 if centro_seleccionado != "Seleccione una opción" and not centro_df.empty:
     # Generar las secciones según la selección del usuario
     generar_grafico_barras(df3, region_seleccionada, provincia_seleccionada, distrito_seleccionado)
-    generar_tabla_estadisticas(df3, region_seleccionada, provincia_seleccionada, distrito_seleccionado)
     generar_mapa_calor(df3, centro_df)
-    
+    generar_tabla_estadisticas(df3, region_seleccionada, provincia_seleccionada, distrito_seleccionado)
+   
 else:
     st.warning("Selecciona un centro de vacunación para ver la información.")
-
-
